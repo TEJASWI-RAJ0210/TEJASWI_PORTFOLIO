@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+//import { Contact } from "lucide-react";
 
 export default function App() {
   return (
@@ -13,6 +15,7 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       
     </div>
    </>

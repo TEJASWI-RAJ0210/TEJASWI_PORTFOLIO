@@ -10,6 +10,7 @@ const Navbar = () => {
                 <div className="rounded-full px-2 py-1 flex items-center gap-1">
                     <a href="#Home" className="px-4 py-2 text-sm text-[#7a8491] hover:text-[#1DA1F2] rounded-full hover:bg-[#1a2329]">Home</a>
                     <a href="#About" className="px-4 py-2 text-sm text-[#7a8491] hover:text-[#1DA1F2] rounded-full hover:bg-[#1a2329]">About</a>
+                    <a href="#Skills" className="px-4 py-2 text-sm text-[#7a8491] hover:text-[#1DA1F2] rounded-full hover:bg-[#1a2329]">Skills</a>
                     <a href="#Projects" className="px-4 py-2 text-sm text-[#7a8491] hover:text-[#1DA1F2] rounded-full hover:bg-[#1a2329]">Projects</a>
                     <a href="#Contact" className="px-4 py-2 text-sm text-[#7a8491] hover:text-[#1DA1F2] rounded-full hover:bg-[#1a2329]">Contact</a>
                 </div>

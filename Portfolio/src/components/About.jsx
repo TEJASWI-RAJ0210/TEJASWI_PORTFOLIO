@@ -2,7 +2,7 @@ import { Briefcase, Code, User } from "lucide-react";
 
 const About = () => {
     return (
-        <section id="About" className="min-h-screen relative py-24 px-4">
+        <section id="About" className="min-h-screen flex flex-col justify-center py-24 px-4">
         <div className="container mx-auto max-w-5xl ">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                 About <span className="text-blue-400">Me</span>
@@ -20,7 +20,7 @@ const About = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                        <a href="#Contact" className="px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-500/10 text-center">{""} Get In Touch</a>
+                        <a href="#Contact" className="px-6 py-3 bg-blue-500 text-white rounded-full text-center">{""} Get In Touch</a>
                         <a href="" className="px-6 py-3 bg-blue-500/10 text-white rounded-full hover:bg-blue-500 text-center">{""} Download CV</a>
                     </div>
                 </div>

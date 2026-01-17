@@ -10,7 +10,7 @@ const Home = () => {
                     </h1>
                     <p className="text-lg md:text-xl max-2-2xl text-gray-600 mb-8"> i am a full stack developer and love to code and create new projects , i build responsive websites and applications using modern technologies.</p>
                     <div className="pt-4 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 inline-block hover:scale-105 transition-transform">
-                        <a href="projects" className="flex items-center gap-1 px-4 py-1 mb-2 rounded-xl text-white font-medium hover:bg-transparent transition-colors">
+                        <a href="#Projects" className="flex items-center gap-1 px-4 py-1 mb-2 rounded-xl text-white font-medium hover:bg-transparent transition-colors">
                             View My Work
                         </a>
                     </div>
