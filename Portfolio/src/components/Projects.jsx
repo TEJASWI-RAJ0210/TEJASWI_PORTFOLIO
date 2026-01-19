@@ -1,11 +1,11 @@
 
-
+import { Github } from "lucide-react";
 const listProjects = [
     {
         id: 1,
         title: "Connect",
         description: "A social media platform to connect with friends and family.",
-        tech: ["React", "Tailwind CSS"],
+        tech: ["React", "Tailwind CSS", "JavaScript"],
         image: "/Projects/Project1.png",
         link: "#"
     },
@@ -27,7 +27,7 @@ const Projects = () => {
                     My <span className="text-blue-400">Projects</span>
                 </h2>
 
-                <p className="text-center text-white mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-white mb-12 max-w-xl mx-auto font-medium">
                     Here are some of my recent projects. Each project showcases my skills and expertise in web development.
                 </p>
 
@@ -44,7 +44,12 @@ const Projects = () => {
                                     </span>
                                 ))}
                             </div>
+
+                            <div className="rounded-full p-3 mt-4 bg-blue-500/10 inline-block">
+                                <a href="#" className="text-blue-200 hover:text-blue-400 transition-colors"><Github /></a>
+                            </div>
                         </div>
+                        
                     ))}
                 </div>
             </div>

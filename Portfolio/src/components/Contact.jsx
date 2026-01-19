@@ -42,19 +42,19 @@ const Contact = () => {
                                         <Mail className="h-6 w-6 text-blue-500"/>
                                     </div>
                                     <div>
-                                        <h4 className="text-lg font-medium">Email</h4>
+                                        <h4 className="text-lg font-medium text-left">Email</h4>
                                         <a href="mailto:tejaswi@gmail.com" className="text-blue-200 hover:text-blue-400 transition-colors">tejaswi@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="space-y-6 justify-center">
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center  space-x-4">
                                     <div className="rounded-full p-3 bg-blue-500/10">
                                         <Phone className="h-6 w-6 text-blue-500"/>
                                     </div>
                                     <div>
-                                        <h4 className="text-lg font-medium">Phone</h4>
+                                        <h4 className="text-lg font-medium text-left">Phone</h4>
                                         <a href="tel:+91 8247856789" className="text-blue-200 hover:text-blue-400 transition-colors">+91 8247856789</a>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                                         <MapPin className="h-6 w-6 text-blue-500"/>
                                     </div>
                                     <div>
-                                        <h4 className="text-lg font-medium">Location</h4>
+                                        <h4 className="text-lg font-medium text-left">Location</h4>
                                         <a  className="text-blue-200 hover:text-blue-400 transition-colors">Bihar, India</a>
                                     </div>
                                 </div>

@@ -16,7 +16,7 @@ const About = () => {
                     I'm Tejaswi Raj, a dedicated full-stack developer with a passion for crafting dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I thrive on turning complex problems into elegant solutions. My journey in web development is fueled by a love for coding and a commitment to continuous learning. I enjoy collaborating on innovative projects that push the boundaries of technology and creativity.
                     </p>
                     <p className="text-blue-300">
-                    I'm Tejaswi Raj, a dedicated full-stack developer with a passion for crafting dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I thrive on turning complex problems into elegant solutions. My journey in web development is fueled by a love for coding and a commitment to continuous learning. I enjoy collaborating on innovative projects that push the boundaries of technology and creativity.
+                    Whether working independently or as part of a team, I bring enthusiasm and a strong work ethic to every project. Let's connect and create something amazing together!
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
