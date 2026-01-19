@@ -1,7 +1,26 @@
 import { Mail,MapPin,Phone } from "lucide-react";
 import { Linkedin,Github, Twitter,Instagram } from "lucide-react";
+import emailjs from '@emailjs/browser';
+import { useState } from "react";
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_plo5mpu', 'template_z1frr8e', e.target, 'Nwp98ZqmJLBr1sffR')
+            .then((result) => {
+                console.log('SUCCESS!', result.status, result.text);
+                setFormData({ name: '', email: '', message: '' });
+            }, (err) => {
+                console.log('FAILED...', err);
+            });
+    };
+
     return (
         <section id="Contact" className="min-h-screen flex flex-col justify-center py-24 px-4">
             <div className="container mx-auto max-w-4xl text-center z-10">
@@ -9,11 +28,11 @@ const Contact = () => {
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                         Get in <span className="text-blue-400">Touch</span>
                     </h2>
-                    <p className="text-lg text-center md:text-xl max-w-2xl text-gray-600 mb-12 mx-auto">
+                    <p className="text-lg text-center md:text-xl max-w-2xl text-white mb-12 mx-auto">
                         I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out to me!
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <div className="space-y-8 p-8 rounded-xl border border-gray-700 shadow-lg bg-gray-900">
+                        <div className="space-y-8 p-8 rounded-xl border border-gray-700 shadow-lg bg-gray-800/80">
                             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
                             
@@ -24,7 +43,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-medium">Email</h4>
-                                        <a href="tejaswi@gmail.com" className="text-blue-200 hover:text-blue-400 transition-colors">tejaswi@gmail.com</a>
+                                        <a href="mailto:tejaswi@gmail.com" className="text-blue-200 hover:text-blue-400 transition-colors">tejaswi@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +55,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-medium">Phone</h4>
-                                        <a href="+91 8247856789" className="text-blue-200 hover:text-blue-400 transition-colors">+91 8247856789</a>
+                                        <a href="tel:+91 8247856789" className="text-blue-200 hover:text-blue-400 transition-colors">+91 8247856789</a>
                                     </div>
                                 </div>
                             </div>
@@ -73,20 +92,20 @@ const Contact = () => {
                             
                         </div>
 
-                        <div className="p-8 rounded-xl border border-gray-700 shadow-lg bg-gray-900">
+                        <div className="p-8 rounded-xl border border-gray-700 shadow-lg bg-gray-800/80">
                             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-                            <form className="space-y-6">
+                            <form className="space-y-6" onSubmit={handleSubmit}>
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                                    <input type="text" id="name" name="name" className="w-full px-4 py-3 border border-input bg-black/70  rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-hidden" placeholder="Tejaswi Raj..."/>
+                                    <input type="text" id="name" name="name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 border border-input bg-black/70  rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-hidden" placeholder="Tejaswi Raj..."/>
                                 </div>
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                                    <input type="email" id="email" name="email" className="w-full px-4 py-3 border border-input bg-black/70 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-hidden " placeholder="email@gmail.com"/>
+                                    <input type="email" id="email" name="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 border border-input bg-black/70 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-hidden " placeholder="email@gmail.com"/>
                                 </div>
                                 <div>
                                     <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                                    <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 border border-input bg-black/70 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-hidden" placeholder="Type a message"></textarea>
+                                    <textarea id="message" name="message" rows={4} value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 border border-input bg-black/70 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-hidden" placeholder="Type a message"></textarea>
                                 </div>
                                 <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors">
                                     Send Message
@@ -97,7 +116,7 @@ const Contact = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Contact
+export default Contact;

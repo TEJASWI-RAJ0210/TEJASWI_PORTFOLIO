@@ -9,19 +9,19 @@ const About = () => {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6 ">
-                    <h3 className="text-2xl font-semibold">Passionate web Developer & tech creator</h3>
+                <div className="space-y-6 p-8 rounded-xl border border-gray-700 shadow-lg bg-gray-800/80">
+                    <h3 className="text-2xl font-semibold">Passionate Web Developer </h3>
 
-                    <p className="text-gray-600">
+                    <p className="text-blue-300">
                     I'm Tejaswi Raj, a dedicated full-stack developer with a passion for crafting dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I thrive on turning complex problems into elegant solutions. My journey in web development is fueled by a love for coding and a commitment to continuous learning. I enjoy collaborating on innovative projects that push the boundaries of technology and creativity.
                     </p>
-                    <p className="text-gray-600">
+                    <p className="text-blue-300">
                     I'm Tejaswi Raj, a dedicated full-stack developer with a passion for crafting dynamic and responsive web applications. With expertise in both front-end and back-end technologies, I thrive on turning complex problems into elegant solutions. My journey in web development is fueled by a love for coding and a commitment to continuous learning. I enjoy collaborating on innovative projects that push the boundaries of technology and creativity.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                        <a href="#Contact" className="px-6 py-3 bg-blue-500 text-white rounded-full text-center">{""} Get In Touch</a>
-                        <a href="" className="px-6 py-3 bg-blue-500/10 text-white rounded-full hover:bg-blue-500 text-center">{""} Download CV</a>
+                        <a href="#Contact" className="px-6 py-3 bg-blue-800 text-white rounded-full text-center">{""} Get In Touch</a>
+                        <a href="" className="px-6 py-3 bg-blue-500/50 text-white rounded-full hover:bg-blue-500 text-center">{""} Download CV</a>
                     </div>
                 </div>
 
