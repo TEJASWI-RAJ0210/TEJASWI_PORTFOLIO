@@ -12,11 +12,11 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build Docker Image
-        run: docker build -t your-dockerhub-username/portfolio-app .
+        run: docker build -t tejaswi0210/portfolio-app:latest .
 
       - name: Login to Docker Hub
         run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
 
       - name: Push Image
-        run: docker push your-dockerhub-username/portfolio-app
+        run: docker push tejaswi0210/portfolio-app:latest
